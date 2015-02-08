@@ -1,0 +1,12 @@
+#!/bin/bash
+FULL_FILE_PATH=/disk1/driveby_data/222mhz_data.out
+FILE_PATH=/disk1/driveby_data/
+FILE=222mhz_data.out
+DATE=`date +%Y-%m-%d-%H-%M-%S_`
+DATE_FILE=$DATE
+DATE_FILE+=$FILE_PATH
+FILE_PATH+=$DATE
+FILE_PATH+=$FILE
+echo $FULL_FILE_PATH $FILE_PATH
+
+/bin/mv $FULL_FILE_PATH $FILE_PATH

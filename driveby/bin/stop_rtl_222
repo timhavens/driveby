@@ -1,0 +1,3 @@
+#!/bin/bash
+export LD_LIBRARY_PATH=/usr/local/src/target/lib/
+ps -ef | grep "rtl_power" | grep "222700000" | awk '{print $2}' | xargs kill

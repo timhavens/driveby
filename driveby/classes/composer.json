@@ -1,0 +1,23 @@
+{
+    "name": "nykopol/gpsd-client",
+    "type": "library",
+    "description": "Client class for GPSD service",
+    "authors": [
+        {"name": "Johan Desmyter", "email": "johan@etic.yt"}
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/nykopol/gpsd-client.git"
+        }
+    ],
+    "license": "LGPL v3",
+    "require": {
+	"php": ">=5.3"
+    },
+    "autoload": {
+        "psr-0": { "Nykopol\\GpsdClient": "" }
+    },
+    "target-dir": "Nykopol/GpsdClient"
+}
+

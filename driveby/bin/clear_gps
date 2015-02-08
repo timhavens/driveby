@@ -1,0 +1,35 @@
+#!/bin/bash
+FULL_FILE_PATH=/disk1/driveby_data/gps_data.out
+FULL_FILE_PATH1=/disk1/driveby_data/gps_az_el.out
+FULL_FILE_PATH2=/disk1/driveby_data/gps_dop.out
+FILE_PATH=/disk1/driveby_data/
+DATE=`date +%Y-%m-%d-%H-%M-%S_`
+
+FILE=gps_data.out
+DATE_FILE=$DATE
+DATE_FILE+=$FILE_PATH
+FILE_PATH+=$DATE
+FILE_PATH+=$FILE
+echo $FULL_FILE_PATH $FILE_PATH
+
+mv $FULL_FILE_PATH $FILE_PATH
+
+FILE_PATH=/disk1/driveby_data/
+FILE1=gps_az_el.out
+DATE_FILE=$DATE
+DATE_FILE+=$FILE_PATH
+FILE_PATH+=$DATE
+FILE_PATH+=$FILE1
+echo $FULL_FILE_PATH1 $FILE_PATH
+
+mv $FULL_FILE_PATH1 $FILE_PATH
+
+FILE_PATH=/disk1/driveby_data/
+FILE2=gps_dop.out
+DATE_FILE=$DATE
+DATE_FILE+=$FILE_PATH
+FILE_PATH+=$DATE
+FILE_PATH+=$FILE2
+echo $FULL_FILE_PATH2 $FILE_PATH
+
+mv $FULL_FILE_PATH2 $FILE_PATH

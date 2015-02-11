@@ -121,7 +121,7 @@
          </tr>
          <tr>
             <td>
-               <form action="http://<?=$config->conf->http_gui_host?>/driveby_new/config_view_editor.php" method="POST">
+               <form action="http://<?=$config->conf->http_gui_host?>/driveby/config_view_editor.php" method="POST">
                   <table>
                      <?php get_config_form_content(); ?>
                      <tr>

@@ -15,9 +15,9 @@
    <head>
      <meta charset="utf-8">
      <title>GPS</title>
-     <script type="text/javascript" language="javascript" src="/driveby_new/js/FusionCharts.js"></script>
-     <script type="text/javascript" src="/driveby_new/js/jquery-1.8.3.js"></script>
-     <script type="text/javascript" src="/driveby_new/js/jquery-ui-1.9.1.custom.js"></script>
+     <script type="text/javascript" language="javascript" src="/driveby/js/FusionCharts.js"></script>
+     <script type="text/javascript" src="/driveby/js/jquery-1.8.3.js"></script>
+     <script type="text/javascript" src="/driveby/js/jquery-ui-1.9.1.custom.js"></script>
    </head>
 
    <body style="font-family:Arial;background-color:grey;">
@@ -26,21 +26,21 @@
             <td>
                <div id="gpscanvas">TEST</div>
                <script type="text/javascript">
-                  var myChart = new FusionCharts("/driveby_new/FusionCharts/Gadgets/AngularGauge.swf", "myChartId", "200", "200", "0", "0");
-                  myChart.setDataURL(encodeURIComponent("/driveby_new/gps_xml.php"));
+                  var myChart = new FusionCharts("/driveby/FusionCharts/Gadgets/AngularGauge.swf", "myChartId", "200", "200", "0", "0");
+                  myChart.setDataURL(encodeURIComponent("/driveby/gps_xml.php"));
                   myChart.render("gpscanvas");
                </script>
             </td>
             <td>
                <div id="speedcanvas">TEST</div>
                <script type="text/javascript">
-                  var myChart = new FusionCharts("/driveby_new/FusionCharts/Gadgets/AngularGauge.swf", "myChartId1", "200", "200", "0", "0");
-                  myChart.setDataURL(encodeURIComponent("/driveby_new/gps_speed_xml.php"));
+                  var myChart = new FusionCharts("/driveby/FusionCharts/Gadgets/AngularGauge.swf", "myChartId1", "200", "200", "0", "0");
+                  myChart.setDataURL(encodeURIComponent("/driveby/gps_speed_xml.php"));
                   myChart.render("speedcanvas");
                </script>
             </td>
             <td valign="top">
-               <a href="/driveby_new/gps_radar.php" target="_blank">Show Live GPS Plot</a>
+               <a href="/driveby/gps_radar.php" target="_blank">Show Live GPS Plot</a>
             </td>
          </tr>
       </table>

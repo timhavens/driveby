@@ -85,7 +85,7 @@
       }
 
       var xmlhttp = new XMLHttpRequest();
-      var url = "/driveby_new/compass_table_json.php";
+      var url = "/driveby/compass_table_json.php";
 
       function getDataJson() {
          var xhr = new XMLHttpRequest();

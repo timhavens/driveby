@@ -12,7 +12,7 @@
 
     </head>
     <body>
-       <a href="/driveby_new/gps_radar.php" target="_self">GPS Visibility ON</a>
+       <a href="/driveby/gps_radar.php" target="_self">GPS Visibility ON</a>
     </body>
 </html>
 

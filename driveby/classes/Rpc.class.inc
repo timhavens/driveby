@@ -27,7 +27,7 @@ class Rpc {
    public function run_remote($cmd="") {
       //echo "RUN REMOTELY: ($this->host)\n";
       $urlencoded_start_cmd = rawurlencode($cmd);
-      $url = "http://{$this->host}/driveby_new/rpc/rpc.php?q={$urlencoded_start_cmd}";
+      $url = "http://{$this->host}/driveby/rpc/rpc.php?q={$urlencoded_start_cmd}";
       //echo "URL: ($url)\n\n";
       // create curl resource
       $ch = curl_init();

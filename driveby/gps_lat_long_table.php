@@ -97,7 +97,7 @@
       }
 
       var xmlhttp = new XMLHttpRequest();
-      var url = "/driveby_new/gps_lat_long_table_json.php";
+      var url = "/driveby/gps_lat_long_table_json.php";
 
       function getDataJson() {
          var xhr = new XMLHttpRequest();

@@ -39,7 +39,7 @@
        managevalueoverlapping="1"
        autoaligntickvalues="1"
        tickvaluedistance="5"
-       datastreamurl="/driveby_new/gps_az_stream.php"
+       datastreamurl="/driveby/gps_az_stream.php"
        refreshInterval="3">
    <colorrange>
       <color minvalue="0" maxvalue="360" code="00B900" bordercolor="00B900" />

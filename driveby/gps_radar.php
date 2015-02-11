@@ -47,44 +47,45 @@
       <table>
           <tr>
               <td>
-                  <a href="/driveby_new/gps_radar_off.php" target="_self">GPS Visibility OFF</a>
+                  <a href="/driveby/gps_radar_off.php" target="_self">GPS Visibility OFF</a>
               </td>
           </tr>
          <tr>
             <td colspan="2">
-               <form action="/driveby_new/control.php" method="post" target="hid_iframe">
+               <form action="/driveby/control.php" method="post" target="hid_iframe">
                   <button type="submit" value="start_gps" name="submit">Start GPS</button>
                   <button type="submit" value="stop_gps" name="submit">Stop GPS</button>
                   <button type="submit" value="reset_usb" name="submit">Reset USB</button>
+                  <button type="submit" value="gps_set_time" name="submit">GPS Set Time</button>
                   <button type="submit" value="clear_gps" name="submit">Clear GPS</button>
-                  <iframe name='hid_iframe' src='/driveby_new/blank.php' style="width: 200px; height: 40px; overflow:hidden;" frameBorder="0"></iframe>
+                  <iframe name='hid_iframe' src='/driveby/blank.php' style="width: 200px; height: 40px; overflow:hidden;" frameBorder="0"></iframe>
                </form>
             </td>
          </tr>
          <tr>
             <td width="50%" valign="top">
-               <iframe frameBorder="0" scrolling="no" src="/driveby_new/gps_radar_chart.php" style="width:550px;height:560px"></iframe>
+               <iframe frameBorder="0" scrolling="no" src="/driveby/gps_radar_chart.php" style="width:550px;height:560px"></iframe>
             </td>
             <td valign="top" width="50%">
                <table width="100%">
                   <tr>
                      <td valign="top">
-                        <iframe frameBorder="0" src="/driveby_new/gps_table.php" style="width:100%;height:250px"></iframe>
+                        <iframe frameBorder="0" src="/driveby/gps_table.php" style="width:100%;height:250px"></iframe>
                      </td>
                   </tr>
                   <tr>
                      <td colspan="2" valign="top">
-                        <iframe frameBorder="0" src="/driveby_new/gps_dop_table.php" style="width:100%;height:70px"></iframe>
+                        <iframe frameBorder="0" src="/driveby/gps_dop_table.php" style="width:100%;height:70px"></iframe>
                      </td>
                   </tr>
                   <tr>
                      <td colspan="2" valign="top">
-                        <iframe frameBorder="0" src="/driveby_new/compass_table.php" style="width:100%;height:70px"></iframe>
+                        <iframe frameBorder="0" src="/driveby/compass_table.php" style="width:100%;height:70px"></iframe>
                      </td>
                   </tr>
                   <tr>
                      <td colspan="2" valign="top">
-                        <iframe frameBorder="0" src="/driveby_new/gps_lat_long_table.php" style="width:100%;height:70px"></iframe>
+                        <iframe frameBorder="0" src="/driveby/gps_lat_long_table.php" style="width:100%;height:70px"></iframe>
                      </td>
                   </tr>
                </table>

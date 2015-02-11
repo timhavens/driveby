@@ -98,6 +98,12 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit'] == 'reset_usb') {
    }
    $reload_parent_window = true;
 }
+if(isset($_REQUEST['submit']) and $_REQUEST['submit'] == 'gps_set_time') {
+   include_once('classes/Gps.class.inc');
+   $gps = new Gps(0);
+   $results = $gps->gps_set_time();
+   $reload_parent_window = true;
+}
 
 if(isset($_REQUEST['submit']) and $_REQUEST['submit'] == 'stop_rtl_0') {
    include_once('classes/Rtl.class.inc');

@@ -93,7 +93,7 @@ $prev_run_arr = get_previous_run_data();
    </head>
    <body style="font-family:Arial;background-color:grey;">
       Google Map Archive Control Panel
-      <form action="/driveby_new/map.php" method="get" target="_blank">
+      <form action="/driveby/map.php" method="get" target="_blank">
           <input type="hidden" name="nocenter" value="1">
          <table>
              <tr>

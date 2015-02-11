@@ -28,7 +28,7 @@
 
                   var elem = document.getElementById('oneCanvas')
                   elem.addEventListener('click', function(event) {
-                     parent.document.getElementById('contentFrame').src = "/driveby_new/system_status.php";
+                     parent.document.getElementById('contentFrame').src = "/driveby/system_status.php";
                   }, false);
 
                   context.beginPath();
@@ -58,7 +58,7 @@
 
                   var elem = document.getElementById('twoCanvas')
                   elem.addEventListener('click', function(event) {
-                     parent.document.getElementById('contentFrame').src = "/driveby_new/gps.php";
+                     parent.document.getElementById('contentFrame').src = "/driveby/gps.php";
                   }, false);
 
                   context.beginPath();
@@ -88,7 +88,7 @@
 
                   var elem = document.getElementById('threeCanvas')
                   elem.addEventListener('click', function(event) {
-                     parent.document.getElementById('contentFrame').src = "/driveby_new/gps_radar.php";
+                     parent.document.getElementById('contentFrame').src = "/driveby/gps_radar.php";
                   }, false);
 
                   context.beginPath();
@@ -118,7 +118,7 @@
 
                   var elem = document.getElementById('fourCanvas')
                   elem.addEventListener('click', function(event) {
-                     parent.document.getElementById('contentFrame').src = "/driveby_new/control.php";
+                     parent.document.getElementById('contentFrame').src = "/driveby/control.php";
                   }, false);
 
                   context.beginPath();
@@ -148,7 +148,7 @@
 
                   var elem = document.getElementById('fiveCanvas')
                   elem.addEventListener('click', function(event) {
-                     parent.document.getElementById('contentFrame').src = "/driveby_new/system_status.php";
+                     parent.document.getElementById('contentFrame').src = "/driveby/system_status.php";
                   }, false);
 
                   context.beginPath();
@@ -178,7 +178,7 @@
 
                   var elem = document.getElementById('sixCanvas')
                   elem.addEventListener('click', function(event) {
-                     parent.document.getElementById('contentFrame').src = "/driveby_new/nf.php";
+                     parent.document.getElementById('contentFrame').src = "/driveby/nf.php";
                   }, false);
 
                   context.beginPath();

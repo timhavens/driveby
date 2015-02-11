@@ -12,7 +12,7 @@
    <head>
       <meta charset="utf-8">
       <title>Driveby</title>
-      <link href="/driveby_new/css/jquery-ui.css" rel="stylesheet">
+      <link href="/driveby/css/jquery-ui.css" rel="stylesheet">
       <style>
       body{
          font: 62.5% "Trebuchet MS", sans-serif;
@@ -70,34 +70,34 @@
             or   tail -f /disk1/driveby_data/50Mhz_data.out (tk1)
          </div> -->
          <h3>System Status</h3>
-         <div><iframe frameBorder="0" src="/driveby_new/system_status.php" style="width:100%; height:400px"></iframe></div>
+         <div><iframe frameBorder="0" src="/driveby/system_status.php" style="width:100%; height:400px"></iframe></div>
          <h3>GPS Status</h3>
-         <div><iframe frameBorder="0" src="/driveby_new/gps_radar_off.php" style="width:100%; height:650px"></iframe></div>
+         <div><iframe frameBorder="0" src="/driveby/gps_radar_off.php" style="width:100%; height:650px"></iframe></div>
          <h3>Active Noise Floor</h3>
-         <div><iframe frameBorder="0" src="/driveby_new/nf.php" style="width:100%; height:600px" scrolling="no"></iframe></div>
+         <div><iframe frameBorder="0" src="/driveby/nf.php" style="width:100%; height:600px" scrolling="no"></iframe></div>
          <h3>Google Map</h3>
-         <!-- MAP is /driveby_new/map.php we need to add controls for it in here too
+         <!-- MAP is /driveby/map.php we need to add controls for it in here too
               We initialize this iframe with a blank page so that we aren't mapping until we really need to.
               this is so that we can save on RAM usage until we really intend to show the map
          -->
          <div>
-            <a href="/driveby_new/blank.php" target="mapIframe">MAP (OFF)</a>&nbsp;|&nbsp;
-            <a href="/driveby_new/map.php" target="mapIframe">MAP (ALL)</a>&nbsp;|&nbsp;
-            <a href="/driveby_new/map.php?freq=44" target="mapIframe">MAP (44)</a>&nbsp;|&nbsp;
-            <a href="/driveby_new/map.php?freq=50" target="mapIframe">MAP (50)</a>&nbsp;|&nbsp;
-            <a href="/driveby_new/map.php?freq=144" target="mapIframe">MAP (144)</a>&nbsp;|&nbsp;
-            <a href="/driveby_new/map.php?freq=222" target="mapIframe">MAP (222)</a>&nbsp;|&nbsp;
-            <a href="/driveby_new/map.php?freq=432" target="mapIframe">MAP (432)</a><br><br>
-            <iframe frameBorder="0" src="/driveby_new/blank.php" style="width:100%; height:600px" name="mapIframe"></iframe>
+            <a href="/driveby/blank.php" target="mapIframe">MAP (OFF)</a>&nbsp;|&nbsp;
+            <a href="/driveby/map.php" target="mapIframe">MAP (ALL)</a>&nbsp;|&nbsp;
+            <a href="/driveby/map.php?freq=44" target="mapIframe">MAP (44)</a>&nbsp;|&nbsp;
+            <a href="/driveby/map.php?freq=50" target="mapIframe">MAP (50)</a>&nbsp;|&nbsp;
+            <a href="/driveby/map.php?freq=144" target="mapIframe">MAP (144)</a>&nbsp;|&nbsp;
+            <a href="/driveby/map.php?freq=222" target="mapIframe">MAP (222)</a>&nbsp;|&nbsp;
+            <a href="/driveby/map.php?freq=432" target="mapIframe">MAP (432)</a><br><br>
+            <iframe frameBorder="0" src="/driveby/blank.php" style="width:100%; height:600px" name="mapIframe"></iframe>
          </div>
          <h3>Map Archives</h3>
          <div>
-             <iframe frameBorder="0" src="/driveby_new/map_arch.php" style="width:100%; height:600px" scrolling="no"></iframe>
+             <iframe frameBorder="0" src="/driveby/map_arch.php" style="width:100%; height:600px" scrolling="no"></iframe>
          </div>
          <!-- still working on this, you'll have to edit classes/config.php to suite your setup until then -->
          <!-- <h3>Config</h3>
          <div>
-             <iframe frameBorder="0" src="/driveby_new/config_view_editor.php" style="width:100%; height:600px" scrolling="yes"></iframe>
+             <iframe frameBorder="0" src="/driveby/config_view_editor.php" style="width:100%; height:600px" scrolling="yes"></iframe>
          </div> -->
          <h3>About</h3>
          <div>About</div>
@@ -106,8 +106,8 @@
 
       <!-- UI STUFF -->
 
-      <script src="/driveby_new/external/jquery/jquery.js"></script>
-      <script src="/driveby_new/js/jquery-ui.js"></script>
+      <script src="/driveby/external/jquery/jquery.js"></script>
+      <script src="/driveby/js/jquery-ui.js"></script>
       <script>
 
       $( "#accordion" ).accordion();

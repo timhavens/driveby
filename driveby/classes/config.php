@@ -10,7 +10,7 @@
 
 return (object) array(
    'php_exec_path'      => '/usr/bin/php',
-   'www_root'           => '/var/www/html/driveby_new/',
+   'www_root'           => '/var/www/html/driveby/',
    'data_storage_local' => '/disk1/driveby_data/',
    'data_storage_nfs'   => '/mnt/nfs/disk1/driveby_data/',
    'rtl_power_path'     => '/usr/local/bin/rtl_power',

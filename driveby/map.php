@@ -104,7 +104,7 @@
       //
       // https://developers.google.com/maps/documentation/javascript/heatmaplayer
       var xmlhttp = new XMLHttpRequest();
-      var url = "/driveby_new/map_data_json.php?freq=<?=$freq?>";
+      var url = "/driveby/map_data_json.php?freq=<?=$freq?>";
       var last_time = <?=$ts?>;
 
       function getMapDataJson() {
@@ -247,7 +247,7 @@
          map.setCenter({lat: LLData["lat"], lng: LLData["long"]});
       }
 
-      var llurl = "/driveby_new/gps_lat_long_table_json.php";
+      var llurl = "/driveby/gps_lat_long_table_json.php";
 
       function getMapCenterJson() {
          var xhr = new XMLHttpRequest();

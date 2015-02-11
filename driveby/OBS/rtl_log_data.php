@@ -11,7 +11,7 @@
   NOTE: https://developers.google.com/maps/documentation/javascript/tutorial
 
   rm /disk1/driveby_data/*.out
-  php /home/ubuntu/driveby_new/test.php > /disk1/driveby_data/gps_data.out&
+  php /home/ubuntu/driveby/test.php > /disk1/driveby_data/gps_data.out&
   rtl_power -d 0 -f 50000000:50300000:300k -i 3 -g 5 -w blackman -F 7 -c 20% /disk1/driveby_data/50mhz_data.out&
   rtl_power -d 1 -f 154700000:154900000:300k -i 3 -g 5 -w blackman -F 7 -c 20% /disk1/driveby_data/154mhz_data.out&
   rtl_power -d 2 -f 222000000:222300000:300k -i 3 -g 5 -w blackman -F 7 -c 20% /disk1/driveby_data/222mhz_data.out&
@@ -19,7 +19,7 @@
   tail -f /disk1/driveby_data/*.out
  */
    //error_reporting(E_ALL);
-   include_once('/var/www/html/driveby_new/classes/Data.class.inc');
+   include_once('/var/www/html/driveby/classes/Data.class.inc');
    $d = new Data();
 ?>
 <!DOCTYPE html>

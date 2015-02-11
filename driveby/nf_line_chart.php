@@ -72,7 +72,7 @@ $rtl_4_mhz = $config->conf->rtl[4]->mhz;
       }
 
       var xmlhttp = new XMLHttpRequest();
-      var url = "/driveby_new/nf_line_chart_json.php";
+      var url = "/driveby/nf_line_chart_json.php";
 
       function getDataJson(data) {
          var xhr = new XMLHttpRequest();

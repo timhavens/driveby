@@ -150,7 +150,34 @@ class Gps {
       return $results;
    }
 
-   function findRootCommandPID($command,$args="")  {
+   public function gps_set_time() {
+      $url = "http://{$this->config->conf->http_gui_host}/driveby/gps_sets_os_time.php";
+      //echo "URL: ($url)\n\n";
+      // create curl resource
+      $ch = curl_init();
+      // set url
+      curl_setopt($ch, CURLOPT_URL, $url);
+      //return the transfer as a string
+      curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+      // milli second timeout
+      curl_setopt($ch, CURLOPT_TIMEOUT_MS, 3000);
+      curl_setopt($ch, CURLOPT_NOSIGNAL, 1);
+      // $output contains the output string
+      $output = curl_exec($ch);
+      // close curl resource to free up system resources
+
+      if(curl_error($ch)) {
+         error_log("ERROR: URL: $url",0);
+         error_log("ERROR: curl error = ".curl_error($ch),0);
+         die("ERROR: curl error = ".curl_error($ch));
+      }
+      error_log("SUCCESS: URL: $url",0);
+      curl_close($ch);
+      //print_r($output);
+      return $output;
+   }
+
+   public function findRootCommandPID($command,$args="")  {
       $ps = `sudo -u root ps aux | grep 'root' | grep $command | grep $args`; // this is a problem for rtl_power running...we'll need to resolve how to
                                       // stop and start rtl_power from the www-data user commands in control.php
       $ps_lines = explode("\n", $ps);
@@ -164,7 +191,7 @@ class Gps {
       }
    }
 
-   function findCommandPID($command,$args="")  {
+   public function findCommandPID($command,$args="")  {
       $ps = `ps aux | grep www-data`; // this is a problem for rtl_power running...we'll need to resolve how to
                                       // stop and start rtl_power from the www-data user commands in control.php
       $ps_lines = explode("\n", $ps);
@@ -186,7 +213,7 @@ class Gps {
       }
    }
 
-   function killpid($pid) {
+   public function killpid($pid) {
       return posix_kill($pid,9);
    }
 

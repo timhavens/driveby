@@ -47,7 +47,7 @@
        gaugeoriginx="160"
        gaugeoriginy="160"
        showborder="0"
-       datastreamurl="/driveby_new/gps_speed_stream.php"
+       datastreamurl="/driveby/gps_speed_stream.php"
        refreshInterval="3">
     <dials>
         <dial id="spd_dial" value="0" bgcolor="000000" bordercolor="#FFFFFF" borderalpha="100" basewidth="4" topwidth="4" borderthickness="2" valuey="260" />

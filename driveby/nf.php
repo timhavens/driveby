@@ -8,7 +8,7 @@
  * Originally written by Tim R. Havens 2015-01-27 please track changes below
  *
  */
-$dataUrl = "/driveby_new/fc_data.php";
+$dataUrl = "/driveby/fc_data.php";
 include_once ('classes/Config.class.inc');
 $config = new Config();
 $localhost = $config->conf->http_gui_host;
@@ -56,7 +56,7 @@ $rtl_4_mhz = $config->conf->rtl[4]->mhz;
       }
 
       var xmlhttp = new XMLHttpRequest();
-      var url = "/driveby_new/nf_data.php";
+      var url = "/driveby/nf_data.php";
 
       function getMapDataJson(data) {
          var xhr = new XMLHttpRequest();
@@ -91,7 +91,7 @@ $rtl_4_mhz = $config->conf->rtl[4]->mhz;
       // RTL NF CALIBRATION (used for mapping)
       function runRTLNFCalibration() {
          var xhr1 = new XMLHttpRequest();
-         var thisurl = "/driveby_new/rtl_nf_calibration.php";
+         var thisurl = "/driveby/rtl_nf_calibration.php";
          xhr1.open('GET', thisurl, true);
          xhr1.onload = function() {
             //we could display this someplace this.responseText but it's not really needed at this point
@@ -110,12 +110,12 @@ $rtl_4_mhz = $config->conf->rtl[4]->mhz;
       <table style="width: 1324px;">
           <tr>
               <td>
-                 <a href="/driveby_new/rtl_nf_calibration.php" target="hid_iframe">force rtl calib</a>
+                 <a href="/driveby/rtl_nf_calibration.php" target="hid_iframe">force rtl calib</a>
               </td>
           </tr>
          <tr>
             <td>
-               <iframe frameBorder="0" src="/driveby_new/nf_line_chart.php" scrolling="no" style="width:98%; height:260px"></iframe>
+               <iframe frameBorder="0" src="/driveby/nf_line_chart.php" scrolling="no" style="width:98%; height:260px"></iframe>
             </td>
          </tr>
          <tr>
@@ -131,7 +131,7 @@ $rtl_4_mhz = $config->conf->rtl[4]->mhz;
                <table style="width: 1024px;">
                   <tr>
                      <td align="center">
-                        <form action="http://<?=$localhost?>/driveby_new/control.php" method="post" target="hid_iframe">
+                        <form action="http://<?=$localhost?>/driveby/control.php" method="post" target="hid_iframe">
                            <button type="submit" value="start_rtl_0" name="submit" style="width: 4em;  height: 4em; background-color: green; color: white">Start <?=$rtl_0_mhz?></button>
                            <br><br>
                            <button type="submit" value="stop_rtl_0" name="submit" style="width: 4em;  height: 4em; background-color: red; color: white">Stop <?=$rtl_0_mhz?></button>
@@ -139,7 +139,7 @@ $rtl_4_mhz = $config->conf->rtl[4]->mhz;
                         </form>
                      </td>
                      <td align="center">
-                        <form action="http://<?=$localhost?>/driveby_new/control.php" method="post" target="hid_iframe">
+                        <form action="http://<?=$localhost?>/driveby/control.php" method="post" target="hid_iframe">
                            <button type="submit" value="start_rtl_1" name="submit" style="width: 4em;  height: 4em; background-color: green; color: white">Start <?=$rtl_1_mhz?></button>
                            <br><br>
                            <button type="submit" value="stop_rtl_1" name="submit" style="width: 4em;  height: 4em; background-color: red; color: white">Stop <?=$rtl_1_mhz?></button>
@@ -147,7 +147,7 @@ $rtl_4_mhz = $config->conf->rtl[4]->mhz;
                         </form>
                      </td>
                      <td align="center">
-                        <form action="http://<?=$localhost?>/driveby_new/control.php" method="post" target="hid_iframe">
+                        <form action="http://<?=$localhost?>/driveby/control.php" method="post" target="hid_iframe">
                            <button type="submit" value="start_rtl_2" name="submit" style="width: 4em;  height: 4em; background-color: green; color: white">Start <?=$rtl_2_mhz?></button>
                            <br><br>
                            <button type="submit" value="stop_rtl_2" name="submit" style="width: 4em;  height: 4em; background-color: red; color: white">Stop <?=$rtl_2_mhz?></button>
@@ -155,7 +155,7 @@ $rtl_4_mhz = $config->conf->rtl[4]->mhz;
                         </form>
                      </td>
                      <td align="center">
-                        <form action="http://<?=$localhost?>/driveby_new/control.php" method="post" target="hid_iframe">
+                        <form action="http://<?=$localhost?>/driveby/control.php" method="post" target="hid_iframe">
                            <button type="submit" value="start_rtl_3" name="submit" style="width: 4em;  height: 4em; background-color: green; color: white">Start <?=$rtl_3_mhz?></button>
                            <br><br>
                            <button type="submit" value="stop_rtl_3" name="submit" style="width: 4em;  height: 4em; background-color: red; color: white">Stop <?=$rtl_3_mhz?></button>
@@ -163,7 +163,7 @@ $rtl_4_mhz = $config->conf->rtl[4]->mhz;
                         </form>
                      </td>
                      <td align="center">
-                        <form action="http://<?=$localhost?>/driveby_new/control.php" method="post" target="hid_iframe">
+                        <form action="http://<?=$localhost?>/driveby/control.php" method="post" target="hid_iframe">
                            <button type="submit" value="start_rtl_4" name="submit" style="width: 4em;  height: 4em; background-color: green; color: white">Start <?=$rtl_4_mhz?></button>
                            <br><br>
                            <button type="submit" value="stop_rtl_4" name="submit" style="width: 4em;  height: 4em; background-color: red; color: white">Stop <?=$rtl_4_mhz?></button>
@@ -173,7 +173,7 @@ $rtl_4_mhz = $config->conf->rtl[4]->mhz;
                   </tr>
                   <tr>
                      <td colspan="5">
-                        <iframe name='hid_iframe' src='/driveby_new/blank.php' style="width: 800px; height: 0px; overflow:hidden;" frameBorder="0"></iframe>
+                        <iframe name='hid_iframe' src='/driveby/blank.php' style="width: 800px; height: 0px; overflow:hidden;" frameBorder="0"></iframe>
                      </td>
                   </tr>
                </table>

@@ -76,9 +76,9 @@ and open the template in the editor.
          file_line_count();
       ?>
       <br>
-      <iframe name='nfs_iframe' src='http://<?=$config->conf->http_gui_host?>/driveby_new/nfs.php' style="width: 300px; height: 40px; overflow:hidden;" frameBorder="0"></iframe>
-      <iframe name='osd_iframe' src='http://<?=$config->conf->http_gui_remote?>/driveby_new/sdown.php' style="width: 200px; height: 40px; overflow:hidden;" frameBorder="0"></iframe>
-      <iframe name='tsd_iframe' src='http://<?=$config->conf->http_gui_host?>/driveby_new/sdown.php' style="width: 150px; height: 40px; overflow:hidden;" frameBorder="0"></iframe>
+      <iframe name='nfs_iframe' src='http://<?=$config->conf->http_gui_host?>/driveby/nfs.php' style="width: 300px; height: 40px; overflow:hidden;" frameBorder="0"></iframe>
+      <iframe name='osd_iframe' src='http://<?=$config->conf->http_gui_remote?>/driveby/sdown.php' style="width: 200px; height: 40px; overflow:hidden;" frameBorder="0"></iframe>
+      <iframe name='tsd_iframe' src='http://<?=$config->conf->http_gui_host?>/driveby/sdown.php' style="width: 150px; height: 40px; overflow:hidden;" frameBorder="0"></iframe>
    </body>
 </html>
 <?php

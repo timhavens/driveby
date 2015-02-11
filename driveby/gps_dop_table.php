@@ -8,7 +8,7 @@
     */
    /*
     * NOTE To use this page we need to have
-    * /usr/bin/php /var/www/html/driveby_new/gps_log_all_data.php&
+    * /usr/bin/php /var/www/html/driveby/gps_log_all_data.php&
     *
     * Running in the background.
     *
@@ -60,7 +60,7 @@
       }
 
       var xmlhttp = new XMLHttpRequest();
-      var url = "/driveby_new/gps_dop_table_json.php";
+      var url = "/driveby/gps_dop_table_json.php";
 
       function getDataJson() {
          var xhr = new XMLHttpRequest();

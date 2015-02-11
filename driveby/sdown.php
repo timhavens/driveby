@@ -20,7 +20,7 @@
       <title>Driveby - System Status</title>
    </head>
    <body style="font-family:Arial;background-color:white;">
-      <form action="/driveby_new/sdown.php" method="post" target="tsd_iframe">
+      <form action="/driveby/sdown.php" method="post" target="tsd_iframe">
          <button type="submit" value="shutdown" name="submit">Shutdown <?=php_uname('n')?></button>
       </form>
    </body>
